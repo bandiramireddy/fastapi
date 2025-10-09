@@ -39,7 +39,7 @@ class ChatRequest(BaseModel):
 
 @app.get("/")
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Welcome to Langchain with FastAPI"}
 
 @app.post("/chat")
 def chat_endpoint(chatrequest: ChatRequest = Body(...)):
